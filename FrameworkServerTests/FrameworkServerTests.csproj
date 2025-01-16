@@ -5,21 +5,22 @@
 
   Copyright (c) 2015 ForgeRock AS. All rights reserved.
 
-  The contents of this file are subject to the terms of the Common Development 
-  and Distribution License("CDDL") (the "License").  You may not use this file 
+  The contents of this file are subject to the terms of the Common Development
+  and Distribution License("CDDL") (the "License").  You may not use this file
   except in compliance with the License.
-  
-  You can obtain a copy of the License at 
+
+  You can obtain a copy of the License at
   http://opensource.org/licenses/CDDL-1.0
-  See the License for the specific language governing permissions and limitations 
-  under the License. 
-  
+  See the License for the specific language governing permissions and limitations
+  under the License.
+
   When distributing the Covered Code, include this CDDL Header Notice in each file
   and include the License file at legal/CDDLv1.txt.
-  If applicable, add the following below this CDDL Header, with the fields 
-  enclosed by brackets [] replaced by your own identifying information: 
+  If applicable, add the following below this CDDL Header, with the fields
+  enclosed by brackets [] replaced by your own identifying information:
   "Portions Copyrighted [year] [name of copyright owner]"
   ====================
+  Portions Copyrighted 2025 Wren Security.
 -->
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
@@ -36,6 +37,7 @@
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TestProjectType>UnitTest</TestProjectType>
     <TargetFrameworkProfile />
+    <NunitPath>$(SolutionDir)\NUnit.Runners.2.6.7\tools</NunitPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -58,7 +60,10 @@
     <Reference Include="Google.Protobuf">
       <HintPath>..\packages\Google.ProtocolBuffers.3\lib\Google.Protobuf.dll</HintPath>
     </Reference>
-    <Reference Include="nunit.framework" />
+    <Reference Include="nunit.framework">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>$(NunitPath)\nunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.IdentityModel" />
     <Reference Include="System.Reactive.Core, Version=2.2.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -146,7 +151,7 @@
     <CreateItem Include="FrameworkServerTests.dll">
       <Output TaskParameter="Include" ItemName="TestAssembly" />
     </CreateItem>
-    <!--MSBuild.Community.Tasks.NUnit DisableShadowCopy="true" WorkingDirectory="bin\$(Configuration)" Assemblies="@(TestAssembly)" ContinueOnError="true" ToolPath="$(NUNIT_HOME)\bin" OutputXmlFile="TestResults_$(Configuration).xml" /-->
+    <!--MSBuild.Community.Tasks.NUnit DisableShadowCopy="true" WorkingDirectory="bin\$(Configuration)" Assemblies="@(TestAssembly)" ContinueOnError="true" ToolPath="$(NunitPath)" OutputXmlFile="TestResults_$(Configuration).xml" /-->
   </Target>
   <Target Name="Clean">
     <Delete Files="AssemblyInfo.cs;version.txt" />
