@@ -1,22 +1,22 @@
 /*
  * ====================
  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
- * 
- * Copyright 2008-2009 Sun Microsystems, Inc. All rights reserved.     
- * 
- * The contents of this file are subject to the terms of the Common Development 
- * and Distribution License("CDDL") (the "License").  You may not use this file 
+ *
+ * Copyright 2008-2009 Sun Microsystems, Inc. All rights reserved.
+ *
+ * The contents of this file are subject to the terms of the Common Development
+ * and Distribution License("CDDL") (the "License").  You may not use this file
  * except in compliance with the License.
- * 
- * You can obtain a copy of the License at 
+ *
+ * You can obtain a copy of the License at
  * http://opensource.org/licenses/cddl1.php
- * See the License for the specific language governing permissions and limitations 
- * under the License. 
- * 
+ * See the License for the specific language governing permissions and limitations
+ * under the License.
+ *
  * When distributing the Covered Code, include this CDDL Header Notice in each file
  * and include the License file at http://opensource.org/licenses/cddl1.php.
- * If applicable, add the following below this CDDL Header, with the fields 
- * enclosed by brackets [] replaced by your own identifying information: 
+ * If applicable, add the following below this CDDL Header, with the fields
+ * enclosed by brackets [] replaced by your own identifying information:
  * "Portions Copyrighted [year] [name of copyright owner]"
  * ====================
  * Portions Copyrighted 2012-2014 ForgeRock AS.
@@ -69,7 +69,7 @@ namespace Org.IdentityConnectors.Framework.Server
         /// <summary>
         /// Base 64 sha1 hash of the connector server key
         /// </summary>
-        /// 
+        ///
         private String _keyHash;
 
         /// <summary>
@@ -683,7 +683,7 @@ namespace Org.IdentityConnectors.Framework.Impl.Server
         /// <summary>
         /// When arguments are serialized, we loose the
         /// generic-type of collections. We must fix
-        /// the arguments 
+        /// the arguments
         /// </summary>
         /// <param name="method"></param>
         /// <param name="args"></param>
@@ -813,7 +813,7 @@ namespace Org.IdentityConnectors.Framework.Impl.Server
             _socket = socket;
             _thisThread = new Thread(Run) { Name = "ConnectionListener", IsBackground = false };
             //TODO: thread pool
-            /*            _threadPool = 
+            /*            _threadPool =
                             new ThreadPoolExecutor
                             (server.getMinWorkers(),
                              server.getMaxWorkers(),
@@ -848,7 +848,7 @@ namespace Org.IdentityConnectors.Framework.Impl.Server
                             stream = sslStream;
                             sslStream.AuthenticateAsServer(_server.ServerCertificate,
                                                            false,
-                                                           SslProtocols.Tls,
+                                                           SslProtocols.None,
                                                            false);
                         }
 
@@ -1072,9 +1072,9 @@ namespace Org.IdentityConnectors.Framework.Impl.Server
             ConnectorInfoManagerFactory.GetInstance().GetLocalManager();
             _requestCount = 0;
             /*
-             * the Java and .Net dates have a different starting point: zero milliseconds in Java corresponds to January 1, 1970, 00:00:00 GMT (aka “the epoch”). 
-             * In .Net zero milliseconds* corresponds to 12:00 A.M., January 1, 0001 GMT. 
-             * So the basic is to bridge over the reference points gap with adding (or substracting) the corresponding number of milliseconds 
+             * the Java and .Net dates have a different starting point: zero milliseconds in Java corresponds to January 1, 1970, 00:00:00 GMT (aka the epoch).
+             * In .Net zero milliseconds* corresponds to 12:00 A.M., January 1, 0001 GMT.
+             * So the basic is to bridge over the reference points gap with adding (or substracting) the corresponding number of milliseconds
              * such that zero milliseconds in .Net is mapped to -62135769600000L milliseconds in Java.
              * This number of milliseconds corresponds to GMT zone, so do not forget to include your time zone offset into the calculations.
              */

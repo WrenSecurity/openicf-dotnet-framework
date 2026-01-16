@@ -32,7 +32,7 @@
     <RootNamespace>Org.ForgeRock.OpenICF.Common.Rpc</RootNamespace>
     <AssemblyName>FrameworkRpc</AssemblyName>
     <ProductName>OpenICF Framework - Remote Procedure Call API</ProductName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>

@@ -30,7 +30,7 @@
     <RootNamespace>Org.IdentityConnectors.Common.Script.Boo</RootNamespace>
     <AssemblyName>Boo.ScriptExecutorFactory</AssemblyName>
     <ProductName>Boo ScriptExecutor Factory</ProductName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">

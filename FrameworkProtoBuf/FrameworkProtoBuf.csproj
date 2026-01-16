@@ -32,7 +32,7 @@
     <RootNamespace>Org.ForgeRock.OpenICF.Common.ProtoBuf</RootNamespace>
     <AssemblyName>FrameworkProtoBuf</AssemblyName>
     <ProductName>OpenICF Framework - Protocol Buffer Messages</ProductName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>

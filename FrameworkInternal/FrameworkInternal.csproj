@@ -30,7 +30,7 @@
     <RootNamespace>Org.IdentityConnectors</RootNamespace>
     <AssemblyName>FrameworkInternal</AssemblyName>
     <ProductName>Open Connectors Framework Internal</ProductName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <NoStdLib>False</NoStdLib>
     <WarningLevel>4</WarningLevel>

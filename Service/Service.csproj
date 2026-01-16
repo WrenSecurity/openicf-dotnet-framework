@@ -30,7 +30,7 @@
     <RootNamespace>Org.IdentityConnectors.Framework.Service</RootNamespace>
     <AssemblyName>ConnectorServer</AssemblyName>
     <ProductName>Open Connectors Framework - Connector Server Service</ProductName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <NoStdLib>False</NoStdLib>
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <TargetFrameworkProfile />
