@@ -29,7 +29,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>TestBundleV2</RootNamespace>
     <AssemblyName>TestBundleV2.Connector</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
     <TargetFrameworkProfile />
   </PropertyGroup>

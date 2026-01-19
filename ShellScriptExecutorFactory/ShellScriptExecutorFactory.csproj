@@ -30,7 +30,7 @@
     <RootNamespace>Sun.OpenConnectors.Common.Script.Shell</RootNamespace>
     <AssemblyName>Shell.ScriptExecutorFactory</AssemblyName>
     <ProductName>ShellScriptExecutorFactory</ProductName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <CopyOutput>true</CopyOutput>
     <TargetFrameworkProfile />
   </PropertyGroup>

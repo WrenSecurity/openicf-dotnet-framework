@@ -30,7 +30,7 @@
     <RootNamespace>Org.IdentityConnectors.Common</RootNamespace>
     <AssemblyName>Common</AssemblyName>
     <ProductName>Open Connectors Common</ProductName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
     <NoStdLib>False</NoStdLib>
     <WarningLevel>4</WarningLevel>

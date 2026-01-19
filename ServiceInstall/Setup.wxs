@@ -12,8 +12,8 @@
                  InstallerVersion="200"
                  Compressed="yes"/>
         <!--
-            Source media for the installation. 
-             Specifies a single cab file to be embedded in the installer's .msi. 
+            Source media for the installation.
+             Specifies a single cab file to be embedded in the installer's .msi.
         -->
         <Media Id="1" Cabinet="contents.cab" EmbedCab="yes" CompressionLevel="high"/>
 
@@ -91,10 +91,8 @@
                         <Component Id="ConnectorServerServiceComponent" Guid="8B1F7E82-46D7-4F88-A1FA-44FCBF7E685F"
                                    DiskId="1">
 
-                            <File Source="$(var.ConnectorServerService.TargetDir)crypto.dll"
-                                  Name="crypto.dll"/>
-                            <File Source="$(var.ConnectorServerService.TargetDir)crypto.xml"
-                                  Name="crypto.xml"/>
+                            <File Source="$(var.ConnectorServerService.TargetDir)BouncyCastle.Crypto.dll"
+                                  Name="BouncyCastle.Crypto.dll"/>
                             <File Source="$(var.ConnectorServerService.TargetDir)FrameworkProtoBuf.dll"
                                   Name="FrameworkProtoBuf.dll"/>
                             <File Source="$(var.ConnectorServerService.TargetDir)FrameworkProtoBuf.pdb"
