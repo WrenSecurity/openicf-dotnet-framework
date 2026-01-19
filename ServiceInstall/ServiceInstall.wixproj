@@ -34,7 +34,7 @@
     <WixTargetsPath Condition=" '$(WixTargetsPath)' == '' ">$(MSBuildExtensionsPath)\Microsoft\WiX\v3.x\Wix.targets</WixTargetsPath>
     <Cultures>en-US</Cultures>
     <SupressIces>ICE45</SupressIces>
-    <OpenICFVersion>1.5.2.0-SNAPSHOT</OpenICFVersion>
+    <OpenICFVersion>1.5.2.1-SNAPSHOT</OpenICFVersion>
     <MSBuildCommunityTasksPath>$(SolutionDir)\MSBuildTasks.1.5.0.235\tools</MSBuildCommunityTasksPath>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -58,7 +58,7 @@
     <DebugSymbols>true</DebugSymbols>
     <Optimize>True</Optimize>
     <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
-    <OpenICFVersion>1.5.2.0</OpenICFVersion>
+    <OpenICFVersion>1.5.2.1</OpenICFVersion>
   </PropertyGroup>
   <Import Project="$(WixTargetsPath)" />
   <Import Project="$(MSBuildCommunityTasksPath)\MSBuild.Community.Tasks.Targets" />
